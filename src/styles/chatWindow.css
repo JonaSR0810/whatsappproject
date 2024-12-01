@@ -1,0 +1,116 @@
+
+
+.inputMensaje{
+    background-color: #3f3f3f;
+    color: white;
+}
+
+.inputMensaje::placeholder{
+    color: rgba(195, 195, 195, 0.638);
+    
+}
+
+.selNewChat{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.outgoing{
+    font-size: 20px;
+    background-color: green;
+    border-radius: 15px;
+    float: right;
+    margin-bottom: 1.5%;
+
+
+}
+.incoming{
+    font-size: 20px;
+    background-color: #3f3f3f;
+    border-radius: 15px;
+    float: left;
+    margin-bottom: 1.5%;
+   
+}
+
+.mensajeFinal{
+    display: flex;
+    width: auto;
+    max-width: 60%;
+    justify-content: center;
+    clear: both;
+    padding: 5px 10px;
+}
+
+.textoMensaje{
+    word-break: break-word;
+}
+
+
+.messages{
+    overflow-y:scroll;
+    max-height: 500px;
+}
+
+/* Estilo para la barra de desplazamiento */
+.messages::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra */
+}
+
+/* Estilo para el track (fondo de la barra) */
+.messages::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+/* Estilo para el thumb (control deslizante) */
+.messages::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+/* Cambiar el color del thumb cuando se hace hover */
+.messages::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+.chat-header2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Asegúrate de que ocupe el espacio completo */
+}
+
+.iconos-header {
+    display: flex;
+    gap: 10px; /* Espaciado entre los íconos */
+    font-size: 18px;
+    
+}
+
+.iconos-header i{
+    transition: all 0.3s ease; /* Para animar el cambio de tamaño */
+    width: 40px; /* Tamaño fijo del contenedor del icono */
+    height: 40px;
+    line-height: 40px; /* Centrado vertical para alinearse con el tamaño del icono */
+    text-align: center; /* Centrado horizontal */
+    /* border-radius: 5px; Mantén el borde redondeado */
+    box-sizing: border-box; /* Incluye el padding dentro del tamaño total */
+}
+
+.iconos-header i:hover{
+    background-color: rgba(187, 187, 187, 0.30); 
+    cursor: pointer;
+    border-radius: 5px;
+    transform: scale(1.1); /* Aumenta el tamaño sin alterar el flujo del diseño */
+}
+
+.foto-chatwindow{
+    width: 8%;
+}
+
